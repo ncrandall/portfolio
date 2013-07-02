@@ -4,14 +4,14 @@ ruby '2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
+# Heroku rails 4 gem
+gem 'rails_12factor'
+
 # bootstrap
 gem 'bootstrap-sass', '2.3.1.0'
 
 # use PostgreSQL database
 gem 'pg'
-
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -45,7 +45,7 @@ group :test do
 	gem 'rspec-rails'
 end
 
-group :development do
+group :development, :test do
 	gem 'factory_girl_rails', '4.2.1'
 end
 
