@@ -1,0 +1,44 @@
+@font-face {
+	font-family: "standard-font";
+	src: url('/latest.ttf')
+}
+
+html, body{
+	height: 100%
+}
+
+.fancy {
+	font-family: standard-font !important;
+	a:hover {
+		text-decoration: none;
+	}
+}
+
+.large {
+	font-size: 46pt;
+}
+
+.medium {
+	font-size: 16pt;
+}
+
+#dead-center {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 500px;
+	height: 100px;
+	text-align: center;
+}
+
+#wrap {
+	height: 100%;
+	margin: 0 auto -25px;
+}
+
+#footer {
+	height: 25px;
+}
