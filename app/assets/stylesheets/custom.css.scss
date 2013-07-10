@@ -1,17 +1,55 @@
+@import "bootstrap";
+
 @font-face {
 	font-family: "standard-font";
 	src: url('/latest.ttf')
 }
 
 html, body{
-	height: 100%
+	height: 100%;
+	font-family: standard-font !important;
 }
 
-.fancy {
-	font-family: standard-font !important;
-	a:hover {
-		text-decoration: none;
+h1 {
+	font-size: 22pt !important;
+	font-weight: normal !important;
+}
+
+.name {
+	a {
+		color: $grayDark;
 	}
+		a:hover {
+		text-decoration: none;
+		color: $grayDark;
+	}
+}
+
+.nav {
+	a {
+		@include border-radius(10px);
+		position: relative;
+		font-size: 18pt;
+		line-height: 2;
+		margin: 5px;
+		padding: -10px 0 0 10px;
+		.icon {
+			display: none;
+			position: absolute;
+			top: 20px;
+			right: 0;
+		}
+	}
+	a:hover {
+		background: none !important;
+		.icon {
+			display: inline-block;
+		}
+	}
+}
+
+a:hover {
+	text-decoration: none !important;
 }
 
 .large {
@@ -19,6 +57,10 @@ html, body{
 }
 
 .medium {
+	font-size: 26pt;
+}
+
+.small {
 	font-size: 16pt;
 }
 

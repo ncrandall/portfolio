@@ -3,8 +3,11 @@ Portfolio::Application.routes.draw do
   root 'static#home'
 
   get '/startups', to: 'static#startups'
-  get '/rails', to: 'static#rails'
+  get '/projects', to: 'static#projects'
   get '/freelance', to: 'static#freelance'
+
+  get '/blog', to: 'static#blog'
+  get '/contact', to: 'static#contact'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
