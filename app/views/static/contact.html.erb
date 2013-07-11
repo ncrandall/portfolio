@@ -1,2 +1,16 @@
 <h1>Contact</h1>
-Coming soon!
+<%= form_for @contact do |f| %>
+  <%= f.label :name, "Name / Company"%>
+  <%= f.text_field :name, class: "span3" %>
+
+  <%= f.label :email, "Email" %>
+  <%= f.text_field :email, class: "span3"  %>
+
+  <%= f.label :phone %>
+  <%= f.text_field :phone, class: "span3"  %>
+
+  <%= f.label :body, "Message / Request" %>
+  <%= f.text_area :body, class: "span3"  %>
+
+  <p><%= f.submit "Send" %></p>
+<% end %>

@@ -1,5 +1,4 @@
 Portfolio::Application.routes.draw do
-
   root 'static#home'
 
   get '/startups', to: 'static#startups'
@@ -8,6 +7,8 @@ Portfolio::Application.routes.draw do
 
   get '/blog', to: 'static#blog'
   get '/contact', to: 'static#contact'
+
+  resources :contacts, only: [:new, :create]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
