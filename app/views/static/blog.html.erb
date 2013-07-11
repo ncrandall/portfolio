@@ -1,6 +1,7 @@
 <h1>Blog</h1>
 <% @posts.each do |p| %>
-  <h3><%= p.title%></h3>
-  <%= p.body %>
-  <%= time_ago_in_words(p.created_at) %>
+  <h4><%= p.title%></h4>
+  <%= raw p.body %>
+  <em><%= p.created_at.strftime("Posted %B %d %Y") %></em>
 <% end %>
+<hr />
