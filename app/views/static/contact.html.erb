@@ -1,16 +1,16 @@
 <h1>Contact</h1>
 <%= form_for @contact do |f| %>
   <%= f.label :name, "Name / Company"%>
-  <%= f.text_field :name, class: "span3" %>
+  <%= f.text_field :name, class: "span4" %>
 
   <%= f.label :email, "Email" %>
-  <%= f.text_field :email, class: "span3"  %>
+  <%= f.text_field :email, class: "span4"  %>
 
   <%= f.label :phone %>
-  <%= f.text_field :phone, class: "span3"  %>
+  <%= f.text_field :phone, class: "span2"  %>
 
   <%= f.label :body, "Message / Request" %>
-  <%= f.text_area :body, class: "span3"  %>
+  <%= f.text_area :body, class: "span6", rows: 6  %>
 
-  <p><%= f.submit "Send" %></p>
+  <p><%= f.submit "Send", class: "btn" %></p>
 <% end %>
