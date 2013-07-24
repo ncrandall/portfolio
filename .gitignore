@@ -17,3 +17,9 @@
 
 /config/initializers/my_env_vars.yml
 /config/database.yml
+/config/rubber
+/config/collectd
+/config/deploy.rb
+Capfile
+pg-backup.sql
+/script

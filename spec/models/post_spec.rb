@@ -8,6 +8,7 @@ describe Post do
   it { should respond_to :title }
   it { should respond_to :body }
   it { should respond_to :author }
+  it { should respond_to :slug }
   it { should be_valid }
 
   describe 'without a title' do

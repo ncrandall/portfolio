@@ -3,10 +3,6 @@ class StaticController < ApplicationController
     render 'home', layout: "landing" 
 	end
 
-  def blog
-    @posts = Post.all
-  end
-
   def freelance
   end
 
