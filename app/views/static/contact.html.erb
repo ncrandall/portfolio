@@ -1,4 +1,11 @@
 <h1>Contact</h1>
+Please feel free to contact me about questions, a quote, suggestions, etc. I will
+respond to all inquires that are not spam!
+<p>
+  <%= link_to "@ndcrandall", "http://twitter.com/ndcrandall" %>,
+  <%= link_to "github", "http://github.com/ncrandall" %>,
+  <%= link_to "LinkedIn", "http://www.linkedin.com/pub/nicholas-crandall/a/849/658" %>
+</p>
 <%= form_for @contact do |f| %>
   <%= f.label :name, "Name / Company"%>
   <%= f.text_field :name, class: "span4" %>

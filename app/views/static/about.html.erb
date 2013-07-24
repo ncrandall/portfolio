@@ -1,0 +1,46 @@
+<h1>About Me</h1>
+<div class="row">
+  <div class="span2">
+    <%= image_tag 'profile.jpg', width: 150, class: "pull-left" %>
+  </div>
+  <div class="span5">
+    <p><b>Languages</b>: English / Spanish</p>
+    <p><b>Development</b>: Ruby on Rails, HTML / CSS, Javascript</p>
+    <p><b>Age</b>: 20 Something</p>
+    <p><b>Location</b>: Palo Alto, CA</p>
+    <p><b>Contact</b>:
+      <%= link_to "web", contact_path %>, 
+      <%= link_to "@ndcrandall", "http://twitter.com/ndcrandall" %>,
+      <%= link_to "github", "http://github.com/ncrandall" %>,
+      <%= link_to "LinkedIn", "http://www.linkedin.com/pub/nicholas-crandall/a/849/658" %>
+    </p>
+  </div>
+</div>
+<h3>Background</h3>
+<p>
+  My name is Nicholas Crandall. I'm a 20 something programmer specializing in web
+  development using Rails. My past experience includes a Bachelor or Science
+  degree in Computer Science from Brigham Young University (class '11). For the 
+  past several years I have worked as both a contract and freelance developer. 
+  Most of my prior work includes PHP and PHP Frameworks such as Wordpress, Cake,
+  Zend, etc. Recently I made the switch to Ruby and Rails development and I haven't
+  looked back since. I'm very passionate about Rails and the Rails community.
+</p>
+<h3>Entrepreneurship</h3>
+<p>
+  Entrepreneurship is important to me. Before, during, and after college I have
+  found myself dreaming about running my own company and providing a valuable
+  service to the masses. The road has been long and arduous with few real successes,
+  but I continue to push forward and build products. I could have taken the easy 
+  route by working full time, buying a house, and settling in with shiny / expensive 
+  toys, but I have never felt content with that lifestyle. As such is the case, I find
+  myself living a very modest lifestyle giving myself as much runway to work on my
+  side projects as possible. 
+</p>
+<h3>Giving Back</h3>
+<p>
+  There have been many people who have helped me out along the way. I would not be here
+  without the help of others. If you are looking to follow a similar path, struggling 
+  to learn Rails, or feel I can help you in any way please 
+  <%= link_to "contact me", contact_path %>! 
+</p>

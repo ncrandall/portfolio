@@ -6,13 +6,10 @@ class StaticController < ApplicationController
   def freelance
   end
 
-  def projects
-  end
-
-  def startups
-  end
-
   def contact
     @contact = Contact.new
+  end
+
+  def portfolio
   end
 end

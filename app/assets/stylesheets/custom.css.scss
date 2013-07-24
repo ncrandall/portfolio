@@ -5,6 +5,11 @@
 	src: url('/latest.ttf')
 }
 
+img {
+	margin-top: 10px;
+	border-radius: 10px;
+}
+
 html, body{
 	height: 100%;
 	font-family: standard-font !important;
@@ -79,6 +84,7 @@ label, input, button, select, textarea {
 	padding-left: 60px;
 	width: 900px;
 	margin-left: 300px;
+	line-height: 1.75;
 }
 
 .name {

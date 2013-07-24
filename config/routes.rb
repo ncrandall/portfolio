@@ -1,12 +1,11 @@
 Portfolio::Application.routes.draw do
   root 'static#home'
 
-  get '/startups', to: 'static#startups'
-  get '/projects', to: 'static#projects'
-  get '/freelance', to: 'static#freelance'
-
+  # get '/freelance', to: 'static#freelance'
+  get '/about', to: "static#about"
   get '/blog', to: 'posts#index'
   get '/contact', to: 'static#contact'
+  get '/portfolio', to: "static#portfolio"
 
   resources :contacts, only: [:new, :create]
   resources :posts, only: [:index, :show]
